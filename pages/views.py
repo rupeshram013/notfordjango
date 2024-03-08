@@ -3,6 +3,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 
+def form_input(request):
+
+    if request.method == "POST":
+        print(request.POST["username"])
 
 def home_view(request):
 

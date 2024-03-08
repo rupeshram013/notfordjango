@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1920, initial-scale=1.3">
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
-    <title>Vulneedme</title>
+    <title>Nofordjango</title>
 </head>
 <body>
     
     <div id="navbar">
-
+        
         <div id="icon">
             <img src="{% static 'images/mountain.png' %}">
             <h1>Hills</h1>
         </div>
-
+        
         <div id="options">
             <a href=".">
                 <img src="{% static 'images/home.png' %}" alt="no-img" >
@@ -36,12 +36,13 @@
                 <img src="{% static 'images/lock.png' %}" alt="">
                 <h1>Login</h1>
             </div>
-            <form >
-                <input type="text" placeholder="Username">
+            {% csrf_token %}
+            <form action="" method="post">
+                <input name="username" type="text" placeholder="Username">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <a href="/">Forgot Password?</a>
-                <button>Login</button>
+                <button type="submit">Login</button>
             </form>
 
             <div id="info">
