@@ -56,9 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            "/home/rupeshram013/Desktop/codeme/notfordjango/pages/template",
-            "/home/rupeshram013/Desktop/codeme/notfordjango/pages/src/css",
-            "/home/rupeshram013/Desktop/codeme/notfordjango/pages/src/images"],
+            "/home/rupeshram013/Desktop/codeme/notfordjango/pages/template"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +117,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/home/rupeshram013/Desktop/codeme/notfordjango/pages/template/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

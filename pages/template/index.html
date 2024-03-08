@@ -12,19 +12,19 @@
     <div id="navbar">
 
         <div id="icon">
-            <img src={% load static images/mountain.png %}>
+            <img src="{% static 'images/mountain.png' %}">
             <h1>Hills</h1>
         </div>
 
         <div id="options">
             <a href=".">
-                <img src="../src/images/home.png" alt="no-img" >
+                <img src="{% static 'images/home.png' %}" alt="no-img" >
             </a>
             <a href=".">
-                <img src="../src/images/letter.png" alt="no-img" >
+                <img src="{% static 'images/message.png' %}" alt="no-img" >
             </a>
             <a href=".">
-                <img src="../src/images/profile-user.png" alt="no-img" >
+                <img src="{% static 'images/profile-user.png' %}" alt="no-img" >
             </a>
         </div>
     </div>
